@@ -1,0 +1,33 @@
+{
+  "name": "curso-cypres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "testeando": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:runDefault": "cypress run --spec cypress/e2e/Tags/*.cy.js",
+    "cypress:runChrome": "cypress run --browser chrome --spec cypress/e2e/Tags/*.cy.js",
+    "cypress:runChromeHeadless": "cypress run --headless --browser chrome --spec cypress/e2e/Tags/*.cy.js",
+    "cypress:browserstack": "browserstack-cypress run --sync --spec cypress/e2e/Tags/*.cy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/grep": "^3.1.5",
+    "cypress": "^12.7.0",
+    "cypress-mochawesome-reporter": "^3.4.0",
+    "cypress-xpath": "^2.0.1",
+    "prettier": "^2.8.4"
+  },
+  "screenshotOnRunFailure": true,
+  "reporter": "cypress-mochawesome-reporter",
+  "reporterOptions": {
+    "charts": true,
+    "reportPageTitle": "Prueba1",
+    "embeddedScreenshots": true,
+    "inlineAssets": true,
+    "saveAllAttempts": true
+  }
+}

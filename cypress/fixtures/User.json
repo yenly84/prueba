@@ -1,0 +1,21 @@
+[
+{
+  "name": "userCorrect",
+  "user": "yeni",
+  "password": "Test123",
+  "expected": "Dashboard"
+},
+
+{ 
+  "name": "userInorrect",
+  "user": "yeni8",
+  "password": "Test123",
+  "expected": "Wrong username or password"
+},
+{
+  "name": "passInorrect",
+  "user": "yeni",
+  "password": "Test1234",
+  "expected": "Wrong username or password"
+}
+]
